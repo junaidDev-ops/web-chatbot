@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOJO</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id = "header">
+        Welcom in JOJO 🤖
+    </div>
+    <div id ="chat-box">
+    <div class ="ai-msg">
+        Assalam o Alaikum! Ma ap ki kiya help kar sakta ho 😊</div>
+    </div>
+    <div id = "input-area">
+        <input type="text" id = "msg-input" placeholder="kuch bhi likho..."/>
+        <button id = "send-btn" onclick="sendMessage()">send</button>
+    </div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
