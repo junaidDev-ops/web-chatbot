@@ -8,8 +8,10 @@ body {
     background: #1a1a2e;
     font-family: Arial;
     height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 

@@ -8,7 +8,12 @@ load_dotenv()
 app = Flask(__name__)
 client = Groq(api_key= os.getenv("GROQ_API_KEY"))
 
-chat_history = []
+chat_history = [
+    {
+        "role": "system",
+        "content": "Tum hamesha short aur seedha jawab dena. Sirf jo poocha gaya hai uska jawab do, extra detail mat dena jab tak specifically na poocha jaye."
+    }
+]
 
 @app.route("/")
 def home():
