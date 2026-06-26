@@ -7,17 +7,27 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div id = "header">
-        Welcom in JOJO 🤖
+    <div id="header">
+        <span id="menu-btn">☰</span>
+        <span>Welcom in JOJO 🤖</span>
     </div>
-    <div id ="chat-box">
-    <div class ="ai-msg">
-        Assalam o Alaikum! Ma ap ki kiya help kar sakta ho 😊</div>
+
+    <div id="sidebar">
+        <button>Login</button>
+        <button>Signup</button>
     </div>
-    <div id = "input-area">
-        <input type="text" id = "msg-input" placeholder="kuch bhi likho..."/>
-        <button id = "send-btn" onclick="sendMessage()">send</button>
+
+    <div id="chat-box">
+        <div class="ai-msg">
+            Hello! I'm JOJO, how can I help you today? 😊
+        </div>
     </div>
-<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    <div id="input-area">
+        <input type="text" id="msg-input" placeholder="Type anything..."/>
+        <button id="send-btn" onclick="sendMessage()">send</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
