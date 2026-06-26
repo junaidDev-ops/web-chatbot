@@ -52,7 +52,7 @@ client = Groq(api_key= os.getenv("GROQ_API_KEY"))
 chat_history = [
     {
         "role": "system",
-        "content": "Tum hamesha short aur seedha jawab dena. Sirf jo poocha gaya hai uska jawab do, extra detail mat dena jab tak specifically na poocha jaye."
+        "content": "You are JOJO, a helpful AI assistant. Always give short, clear, and direct answers. Avoid unnecessary details unless the user specifically asks for more information."
     }
 ]
 
